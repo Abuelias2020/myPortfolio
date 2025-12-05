@@ -734,6 +734,51 @@ body {
     box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
+/* Recommendations Section */
+.recommendations {
+    padding: 80px 20px;
+    background-color: var(--bg-white);
+}
+
+.recommendations-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.recommendation-item {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
+    border-left-color: var(--primary-color);
+}
+
+.rec-quote {
+    color: var(--text-dark);
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
+
+.rec-author {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.rec-contact {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 20px;
